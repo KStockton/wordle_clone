@@ -15387,7 +15387,7 @@ function submitGuess() {
   console.log(guess);
 
   if (!dictionary.includes(guess)) {
-    showAlert("Incorrect");
+    showAlert("Try Again");
     shakeTiles(activeTiles);
     return;
   }
@@ -15465,7 +15465,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("You Win", 5000);
+    showAlert("You Win!", 5000);
     danceTiles(tiles);
     stopInteraction();
   }
