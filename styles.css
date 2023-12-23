@@ -204,7 +204,8 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+
+@media (max-width: 415px) {
   .wordle-grid {
     flex-grow: 0;
     margin-bottom: 2em;
