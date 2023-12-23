@@ -208,15 +208,16 @@ body {
 @media (max-width: 415px) {
   .wordle-grid {
     flex-grow: 0;
-    margin-bottom: 2em;
+    margin: 1rem 0.5rem 1rem 0.6rem;
     width: 350px;
     height: 420px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    margin-bottom: 2rem;
+    
   }
 
   .keyboard {
+    grid-template-columns: repeat(20, minmax(auto, 1fr));
     grid-auto-rows: auto;
   }
 
@@ -236,6 +237,6 @@ body {
   }
 
   .key.large {
-    width: 58px;
+    width: 55px;
   }
 }
