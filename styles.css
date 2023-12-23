@@ -23,6 +23,10 @@ body {
   justify-content: center;
 }
 
+.game-icon {
+  pointer-events: none;
+}
+
 .key {
   font-size: inherit;
   grid-column: span 2;
@@ -70,7 +74,7 @@ body {
 
 .key.correct {
   --hue: 115;
-  --satuartion: 29%;
+  --saturation: 29%;
   --lightness: 43%;
 }
 
@@ -197,5 +201,40 @@ body {
 
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 414px) {
+  .wordle-grid {
+    flex-grow: 0;
+    margin-bottom: 2em;
+    width: 350px;
+    height: 420px;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .keyboard {
+    grid-auto-rows: auto;
+  }
+
+  .tile {
+    font-size: 32px;
+  }
+
+  .key {
+    font-size: 1.4em;
+    width: 35px;
+    height: 58px;
+  }
+
+  .space {
+    width: 17.5px;
+    height: 58px;
+  }
+
+  .key.large {
+    width: 58px;
   }
 }
