@@ -15297,7 +15297,7 @@ const alertContainer = document.querySelector("[data-alert-container]");
 const guessGrid = document.querySelector("[data-guess-grid]");
 const keyboard = document.querySelector("[data-keyboard]");
 
-const offsetFromDate = new Date(2023, 0, 1);
+const offsetFromDate = new Date(2023, 0, 2);
 const msOffset = Date.now() - offsetFromDate;
 const dayOffset = msOffset / 1000 / 60 / 60 / 24;
 
