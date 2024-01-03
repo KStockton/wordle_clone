@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
   font-family: Arial;
+  touch-action: manipulation;
 }
 
 body {
@@ -204,7 +205,6 @@ body {
     transform: translateX(0);
   }
 }
-
 
 @media (max-width: 500px) {
   .wordle-grid {
